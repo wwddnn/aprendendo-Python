@@ -1,0 +1,105 @@
+"""
+import this
+
+zen do phyton
+
+pep8 (python enhancement proposal - proposta de melhoria do python)
+É escrever os codigos de forma pythonica !! pep8 é um guia de estilos !!!
+
+obs: os comentarios em python podem ser feitos com 3 aspas duplas abrindo e 3 pra fechar
+ou tbm podem ser feitos com 3 aspas simples pra abrir e 3 pra fechar
+ou tbm se for comentario em uma linha somente, usa-se #
+
+[1] - usar Camel Case para nomes de classes;
+
+class Calculadora:
+    pass
+
+
+class CalculadoraCientifica:
+    pass
+
+[2] - para funcoes e variaveis, usar nomes em minusculo separados por underline;
+
+def soma():
+    pass
+
+
+def soma_dois():
+    pass
+
+
+numero = 4
+
+
+numero_impar = 5
+
+[3] - utilize 4 espacos para indentacao! nao é recomendado usar o tab, apesar de fazer tbm. ideal é usar os 4 espacos
+para marcar um bloco de indentacao.
+pois o tab pode ter configuracoes diferentes em computadores diferentes.
+
+if 'a' in 'banana':
+    print('tem')
+
+[4] linhas em branco
+separar funcoes e definicoes de classe com 2 linhas em branco ;
+metodos dentro de uma classe devem ser separados com uma unica linha em branco;
+
+[5] imports
+devem ser feitos em linhas separadas ;
+
+#import errado
+import sys, os
+
+#import certo
+import sys
+import os
+
+#nao ha problemas em utilizar
+from types import StringType, ListType
+
+#caso tenha muitos imports de um mesmo pacote, recomenda-se fazer
+from types import (
+    StringType
+    ListType
+    SetType
+    OutroType
+)
+
+obs: imports devem ser colocados no topo do arquivo, logo depois de comentarios ou docstrings e
+antes de constantes ou variaveis globais.
+
+[6] espacos em expressoes e instrucoes
+#nao faça
+funcao( algo[1], { outro: 2 } )
+
+#faça
+funcao(algo[1], {outro: 2})
+
+#nao faça, nao deixe esse espaco aqui
+algo (1)
+
+#faça assim, o parenteses vai junto com o nome da funcao
+algo(1)
+
+#nao faça
+dict ['chave'] = lista [índice]
+
+#faça
+dict['chave'] = lista[índice]
+
+#nao faça
+x               =1
+y               =2
+variavel_longa = 5
+
+#faça
+x = 1
+y = 2
+variavel_longa = 5
+
+
+[7] termine sempre uma instrucao com uma nova linha
+
+"""
+import this
