@@ -10,29 +10,31 @@ obs: os comentarios em python podem ser feitos com 3 aspas duplas abrindo e 3 pr
 ou tbm podem ser feitos com 3 aspas simples pra abrir e 3 pra fechar
 ou tbm se for comentario em uma linha somente, usa-se #
 
+
+
 [1] - usar Camel Case para nomes de classes;
 
 class Calculadora:
     pass
 
-
 class CalculadoraCientifica:
     pass
+
+
 
 [2] - para funcoes e variaveis, usar nomes em minusculo separados por underline;
 
 def soma():
     pass
 
-
 def soma_dois():
     pass
 
-
 numero = 4
 
-
 numero_impar = 5
+
+
 
 [3] - utilize 4 espacos para indentacao! nao é recomendado usar o tab, apesar de fazer tbm. ideal é usar os 4 espacos
 para marcar um bloco de indentacao.
@@ -41,24 +43,28 @@ pois o tab pode ter configuracoes diferentes em computadores diferentes.
 if 'a' in 'banana':
     print('tem')
 
-[4] linhas em branco
-separar funcoes e definicoes de classe com 2 linhas em branco ;
-metodos dentro de uma classe devem ser separados com uma unica linha em branco;
+
+
+[4] linhas em branco:
+-separar funcoes e definicoes de classe com 2 linhas em branco ;
+-metodos dentro de uma classe devem ser separados com uma unica linha em branco;
+
+
 
 [5] imports
 devem ser feitos em linhas separadas ;
 
-#import errado
+#import errado:
 import sys, os
 
-#import certo
+#import certo: aqui esta importando toda a biblioteca:
 import sys
 import os
 
-#nao ha problemas em utilizar
+#nao ha problemas em utilizar: pq nesse caso esta importando algumas bibliotecas dentro do types:
 from types import StringType, ListType
 
-#caso tenha muitos imports de um mesmo pacote, recomenda-se fazer
+#caso tenha muitos imports de um mesmo pacote, recomenda-se fazer: nao esqueca dos 4 espacos:
 from types import (
     StringType
     ListType
@@ -76,10 +82,10 @@ funcao( algo[1], { outro: 2 } )
 #faça
 funcao(algo[1], {outro: 2})
 
-#nao faça, nao deixe esse espaco aqui
+#nao faça, nao deixe esse espaco aqui:
 algo (1)
 
-#faça assim, o parenteses vai junto com o nome da funcao
+#faça assim, o parenteses vai junto com o nome da funcao:
 algo(1)
 
 #nao faça
